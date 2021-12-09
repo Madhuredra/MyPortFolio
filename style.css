@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +18,8 @@ a {
     text-decoration: none;
 }
 .header{
-    border-bottom: 1px solid #E2E8F0;
+    height: 80px;
+    border-bottom: 1px solid var(--darkMode);
 }
 .navbar .nav-logo{
   font-family: 'Palette Mosaic', cursive;
@@ -46,28 +45,28 @@ a {
 }
 .nav-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .nav-item {
-    margin-left: 5rem;
+    margin-left: 1rem;
 }
 
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
-
+    color:var(--darkMode);
 }
 
 .nav-link:hover{
-    color: #482ff7;
+    color: orange;
+    border-bottom: 1px solid var(--darkMode);
 }
-
 .nav-logo {
-    font-size: 2.1rem;
+    font-size: 2.0rem;
     font-weight: 500;
-    color: #482ff7;
+    color:var(--darkMode);
 }
 .navbar .nav-menu ul li a{
     color: var(--darkMode);
@@ -127,6 +126,7 @@ a {
 
 body{
     background-color: var(--bgColor);
+    overflow-x: hidden;
 }
 .navigation{
     display: flex;
@@ -166,10 +166,10 @@ body{
     margin-top: -5px;
 }
 .container{
-    /* background-color:rgba(155, 100, 155, 0.5); */
-    width: 80%;
-    min-height:600px ;
-    max-height: 700px;
+    background-color: var(--bgColor);
+    width: 90%;
+    min-height:650px ;
+    max-height: 750px;
     /* min-height:80vh; */
     display: flex;
     justify-content: space-around;
@@ -182,7 +182,7 @@ body{
     box-shadow: rgba(255, 255, 255, 0.8) -2px 10px 24px, rgba(15, 15, 209, 0.1) 10px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;    
 }
 .container:hover{
-    border-radius: 2%;
+    border-radius: 1%;
     box-shadow: rgba(0, 1222, 0, 0.66) 0px 22px 70px 4px;
 
 }
@@ -196,8 +196,8 @@ body{
     display: flex;
 }
 .right__container img{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
 }
 .right__container img:hover{
@@ -262,7 +262,7 @@ body{
 }
 .btn2:hover{
     background-color: var(--bgColor);
-    border: 1px solid black;
+    border: 1px solid var(--darkMode);
 }
 .btn2:hover a{
     color: var(--darkMode);
@@ -277,54 +277,4 @@ body{
     font-weight: bolder;
     font-size: 20px;
     color: var(--darkMode);
-}
-.ml9 {
-    position: relative;
-    font-weight: 200;
-    font-size: 4em;
-  }
-  
-  .ml9 .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.2em;
-    padding-right: 0.05em;
-    padding-bottom: 0.1em;
-    overflow: hidden;
-  }
-  
-  .ml9 .letter {
-    transform-origin: 50% 100%;
-    display: inline-block;
-    line-height: 1em;
-    font-weight: 900;
-    color:var(--darkMode);
-    border-bottom: 1px solid var(--darkMode);
-  }
-
-
-.aboutSection{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto 0 auto;
-    color: b;
-}
-.hppy {
-    color: grey;
-}
-.aboutMe{
-    width: 100%;
-    min-height: 500px;
-}
-.aboutMeSec{
-    width: 80%;
-    /* background-color: blue; */
-    margin: 0 auto 0 auto;
-}
-.aboutMe .myPic img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
 }
